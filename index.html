@@ -20,31 +20,76 @@
     
     <nav id="stackablesNavbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="top: 80px;">
         <a class="navbar-brand" href="#">
-          <img class="ms-2" src="/assets/imgs/stackables.PNG" width="auto" height="50" alt="stackable logo">
+          <img class="ms-4" src="/assets/imgs/stackables.PNG" width="auto" height="50" alt="stackable logo">
         </a>
-        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+          <ul class="navbar-nav mx-auto p-1 me-2">
+            <li class="nav-item underline active">
+              <a class="nav-link tab ps-1" href="#">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Buy</a>
+                <a class="nav-link tab ps-1" href="#">Report Issue</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link tab ps-1" href="#">Contact</a>
               </li>
-            <li class="nav-itme active">
-                <a class="nav-link">Report Issue</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Contact</a>
+              <li class="nav-item active bg-dark">
+                <a class="nav-link ps-1 d-flex justify-content-center align-items-center" id="buyNow_Btn" href="https://store.steampowered.com/app/3211030/Stackables/" target="_blank">Buy Now</a>
               </li>
           </ul>
         </div>
       </nav>
+      
 
-
+      <div class="d-flex flex-column min-vh-100 align-items-center" id="privacySection">
+        <!-- Main Content Wrapper -->
+        <main class="flex-fill">
+          <h1 class="d-flex justify-content-center privacyHeader text-white p-1">Privacy Policy</h1>
+          <ul class="list-unstyled ps-2 pe-2">
+            <li>
+              <h3>Data Collection</h3>
+              <p>We do not collect, store, or process any personal data from players. When you play [Game Name], no information 
+                is gathered beyond what is required for the game to function locally on your device.</p>
+            </li>
+            <li>
+              <h3>Data Usage</h3>
+              <p>Since we do not collect any personal data, no data is used for marketing, analytics, or any other purposes.
+                 All game data is stored locally on your device and is not transmitted to any external servers.</p>
+            </li>
+            <li>
+              <h3>Third-Party Services</h3>
+              <p>Stackables does not use any third-party services that collect, store, or share personal data. Our game does not contain ads,
+                 in-app purchases, or other features that would require the collection of personal data.</p>
+            </li>
+            <li>
+              <h3>Security</h3>
+              <p>As no personal data is collected, there are no data security concerns related to your information.
+                 However, we recommend keeping your device secure to protect any local game data.</p>
+            </li>
+            <li>
+              <h3>Changes to this Policy</h3>
+              <p>If any changes are made to this Privacy Policy in the future, those changes will be reflected in this document with an updated effective date. Since no personal data is collected,
+                 any policy updates will not affect you unless new features are added to the game.</p>
+            </li>
+          </ul>
+        </main>
+      </div>
+        
+      <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-2">
+          <div class="column">
+            <div class="d-flex justify-content-center mt-0">
+              <p><a href="#privacySection">Privacy Policy</a></p>
+            </div>
+            <div class="d-flex justify-content-center mb-0">
+              <p>&copy; 2025 Gorrdy Games. All rights reserved.</p>
+            </div>
+        </footer>
     <!-- Bootstrap JS -->
     <script src="/javascript/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

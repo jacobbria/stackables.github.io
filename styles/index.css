@@ -1,13 +1,13 @@
 body {
-  height: 7000px;
-}
-
-/* Control navbar transitions */
-.navbar {
-  transition: top 0.35s ease-in-out, opacity 1s ease-in-out;
+  padding-top: 170px; 
+  height: 100%;
 }
 
 /* Override BootStrap animations */
+/* Control navbar transitions */
+.navbar {
+  transition: top 0.3s ease-in-out, opacity 1s ease-in-out;
+}
 /* Initial state of the navbar-collapse */
 .navbar-collapse {
     transition: transform .5s ease-out;
@@ -21,7 +21,7 @@ body {
   
   /* Smooth transition for toggler icon rotation */
   .navbar-toggler-icon {
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.2s ease-in-out; 
   }
   
   /* Rotate the toggler icon when the menu is expanded */
@@ -31,5 +31,59 @@ body {
   
   .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
     transform: rotate(90deg); 
+  }
+
+  /* Navlink Styles */
+  .nav-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .tab {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1px;
+  }
+  
+  .tab::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: rgb(234, 185, 87);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Expands the underline */
+  .nav-link:hover::after {
+    width: 100%; 
+  }
+  
+  .nav-link:active, .nav-link:focus {
+    opacity: .7;
+  }
+
+  /* Button Styles */
+  #buyNow_Btn {
+    color: white;
+  }
+  #buyNow_Btn:hover {
+    background-color: rgb(234, 185, 87);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  /* Footer Styles*/
+  footer {
+    background-color: black;
+    height: auto;
+    line-height: .75rem;
+  }
+
+  /*Privacy Section Styles*/
+  .privacyHeader {
+    background-color: rgb(234, 185, 87);
   }
   

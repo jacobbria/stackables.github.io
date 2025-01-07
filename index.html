@@ -33,7 +33,7 @@
               <a class="nav-link tab ps-1" href="#">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link tab ps-1" href="#">Report Issue</a>
+                <a id="reportIssueBtn" class="nav-link tab ps-1" href="#">Report Issue</a>
             </li>
             <li class="nav-item active" id="contactBtn">
                 <a class="nav-link tab ps-1" href="#">Contact</a>
@@ -80,7 +80,8 @@
       </div>
 
       <!-- Contact Form-->
-       <div id="contactForm" class="p-4 bg-light border rounded" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); z-index: 1000;">
+       <div id="contactForm" class="form-container col-10 col-md-6 col-lg-5 p-4 bg-light border 
+          rounded" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); z-index: 1000;">
         <h3>Contact Us</h3>
         <form>
           <div class="mb-3">
@@ -95,10 +96,33 @@
             <label for="message" class="form-label">Message:</label>
             <textarea id="message" class="form-control" rows="3" placeholder="Your message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-success">Send</button>
+          <button type="submit"  id="sendFormBtn" class="btn btn-success">Send</button>
           <button type="button" id="closeForm" class="btn btn-secondary">Close</button>
         </form>
        </div>
+
+       <!-- Report Issue Form -->
+        <div id="reportIssueForm" class="form-container col-10 col-md-6 col-lg-5 p-4 bg-light border rounded" 
+          style="display: none;  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); z-index: 1000;">
+          <h3>Report Issue</h3>
+          <form>
+            <div class="mb-3">
+              <label for="issueDropdown" class="form-label">Issue:</label>
+              <select id="issueDropdown" class="form-select" required>
+                <option selected></option>
+                <option value="1">Bug</option>
+                <option value="2">Suggestion</option>
+                <option value="3">Other</option>
+              </select>
+              <div class="mb-3">
+                <label for="issueMessage" class="form-label">Message:</label>
+                <textarea id="issueMessage" class="form-control" rows="3" placeholder="Your message" required></textarea>
+              </div>
+            </div>
+            <button type="submit" id="sendIssueFormBtn" class="btn btn-success">Send</button>
+          <button type="button" id="closeReportForm" class="btn btn-secondary">Close</button>
+          </form>
+        </div>
         
       <!-- Footer -->
         <footer class="bg-dark text-white text-center py-2">

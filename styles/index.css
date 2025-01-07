@@ -1,3 +1,12 @@
+body {
+  height: 7000px;
+}
+
+/* Control navbar transitions */
+.navbar {
+  transition: top 0.35s ease-in-out, opacity 1s ease-in-out;
+}
+
 /* Override BootStrap animations */
 /* Initial state of the navbar-collapse */
 .navbar-collapse {

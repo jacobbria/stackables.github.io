@@ -1,0 +1,26 @@
+/* Override BootStrap animations */
+/* Initial state of the navbar-collapse */
+.navbar-collapse {
+    transition: transform .5s ease-out;
+    overflow: hidden;
+  }
+  
+  /* When the menu is expanded */
+  .navbar-collapse.show {
+    transform: translateX(0); 
+  }
+  
+  /* Smooth transition for toggler icon rotation */
+  .navbar-toggler-icon {
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  /* Rotate the toggler icon when the menu is expanded */
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0deg);  
+  }
+  
+  .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(90deg); 
+  }
+  

@@ -25,6 +25,7 @@ const contactBtn = document.getElementById('contactBtn');
 const contactForm = document.getElementById('contactForm');
 const closeForm = document.getElementById('closeForm');
 const contactFormForm = document.querySelector('#contactForm form');
+const sentConfirmation = document.getElementById('thankYouMessage');
 
 contactBtn.addEventListener('click', () => {
     console.log("contactBtn clicked!");
@@ -34,18 +35,23 @@ closeForm.addEventListener('click', () => {
     console.log("closeForm clicked!");
     contactForm.style.display = 'none';
   });
-contactFormForm.addEventListener('submit', (event) => {
+  contactFormForm.addEventListener('submit', (event) => {
     console.log("Contact form submit attempt");
 
-    if (!contactFormForm.reportValidity()){
-        event.preventDefault();
+    // Check if the form is valid
+    if (!contactFormForm.reportValidity()) {
         console.log("Contact form INVALID");
     } else {
-      console.log("Contact form validation passed!");
-      event.preventDefault(); // no backend is handling the form
-      contactForm.style.display = 'none';
+        console.log("Contact form validation passed!");
+
+        // Hide form and show confirmation
+        contactForm.style.display = 'none';
+        contactForm.reset();
+        sentConfirmation.style.display = 'block';
+  
     }
-})
+});
+
 
   // Report Issue Visibility
 const reportIssuetBtn = document.getElementById('reportIssueBtn');
@@ -57,7 +63,6 @@ reportIssuetBtn.addEventListener('click', () => {
     console.log("reportIssueBtn clicked!");
     reportIssueForm.style.display = 'block';
   });
-
   closeIssueForm.addEventListener('click', () => {
     console.log("closeIssueForm clicked!");
     reportIssueForm.style.display = 'none';
@@ -71,7 +76,15 @@ reportIssuetBtn.addEventListener('click', () => {
       console.log("Form validation failed!");
     } else {
       console.log("Form validation passed!");
-      event.preventDefault(); // no backend is handling the form
       reportIssueForm.style.display = 'none';
+      reportIssueForm.reset();
     }
   });
+
+  // Control Message Confirmation Alert
+  const okBtn = document.getElementById('sentOkBtn');
+ 
+  okBtn.addEventListener('click', () => {
+      console.log("closeIssueForm clicked!");
+    });
+

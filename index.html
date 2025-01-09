@@ -48,17 +48,29 @@
       </nav>
 
       <!-- Landing Video -->
-      <div class="video-container row d-flex justify-content-center align-items-center mb-2">   
-             <video class="video-background" autoplay muted loop >
+      <div class="video-container row d-flex justify-content-center align-items-center mb-2">  
+        <div class="spinner" id="spinner"></div> 
+             <video class="video-background " autoplay muted loop  playsinline>
                 <source src="assets/videos/trailer-stackables.mp4" type="video/mp4">
              </video>
       </div>  
+        
+      <div class="about_Section ">
+        <ul class="list-unstyled ps-2 pe-2">
+          <li>
+            <h1> About </h1>
+          </li>
+          <li>
+            <p> Made by a one man team, Stackables will challenge you</p>
+          </li>
+         
+        </ul>
+      </div>
 
         <!-- Main Content Wrapper -->
       <div class="d-flex flex-column min-vh-100 align-items-center" id="privacySection">
          <!-- Landing Video -->
         <main class="flex-fill">
-          
           <!-- Privacy Policy Section -->
           <h1 class="d-flex justify-content-center privacyHeader text-white p-1">Privacy Policy</h1>
           <ul class="list-unstyled ps-2 pe-2">
@@ -113,7 +125,6 @@
       </form>
       </div>
 
-
        <!-- Report Issue Form -->
        <div id="reportIssueForm" class="form-container col-10 col-md-6 col-lg-5 p-4 bg-light border rounded" 
             style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); z-index: 1000;">
@@ -136,8 +147,7 @@
               <button type="button" id="closeReportForm" class="btn btn-secondary">Close</button>
           </form>
       </div>
- 
-        
+         
         <!-- Message Sent Confirmation -->
          <!-- Currently not in use due to Formspree API redirection at free tier -->
         <div id="thankYouMessage" style="display: none; position: absolute;

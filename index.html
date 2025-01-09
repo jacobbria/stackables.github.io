@@ -48,13 +48,59 @@
       </nav>
 
       <!-- Landing Video -->
+       <!-- TO DO: Add loading icon during load/fails -->
+         <!-- TO DO: Research why ios issues exist on autoplay -->
       <div class="video-container row d-flex justify-content-center align-items-center mb-2">   
-             <video class="video-background" autoplay muted loop >
+             <video class="video-background" autoplay muted loop playsinline>
                 <source src="assets/videos/trailer-stackables.mp4" type="video/mp4">
              </video>
+             <button class="d-flex justify-content-center align-items-center" 
+             id="video_DownloadBtn">Download</button>
       </div>  
-
+      
+      <!-- About Section-->
+      <div class="d-flex flex-column align-items-center min-vh-100
+        d-flex justify-content-center p-2">
+        <div class="stackables_logo d-flex flex-column align-items-center">
+          <img src="/assets/imgs/stackables.png">
+        </div>
+        <div class="about_Content_Wrapper ">
+          <div class="about_Stack 
+              d-flex flex-column align-items-start justify-content-center mb-2" >
+              <h1 class="mb-3">Stack'em High!</h1>
+              <p> Stackable is the second game of Gorrdy Games which styles
+                to bring a fun experience that is simple to learn yet hard to master.
+              </p>
+              <p>
+                Guide shapes as they appear to combine and make bigger shapes.
+                The more you combine the more you score. But dont let your shapes
+                go to high...
+              </p>
+            </div>
+            <div class="about_Stack
+              d-flex flex-column align-items-start justify-content-center mb-2"  >
+              <h1 class="mb-3">Stack with Friends</h1>
+              <p> Don't let your skills go unseen. Stackables supports both 
+                solo play or find a friend to compete against in a timed competition. May the best stacker 
+                win!
+              </p>
+            </div>
+          <div class="about_Stack 
+              d-flex flex-column align-items-start justify-content-center mb-2" >
+              <h1 class="mb-3">Stack Everywhere</h1>
+              <p> Stackable features over four different and distinct maps
+                ready to be tackled. Each map features different scenery 
+                and entirely new materials to mix and match.
+              </p>
+              <p>
+                Some say that if you play right there might 
+                be secrets to find and unlock...
+              </p>
+            </div>
+            </div>
+          </div>
         <!-- Main Content Wrapper -->
+         <!-- TO DO: make header with 3d effect to match style-->
       <div class="d-flex flex-column min-vh-100 align-items-center" id="privacySection">
          <!-- Landing Video -->
         <main class="flex-fill">
@@ -113,7 +159,6 @@
       </form>
       </div>
 
-
        <!-- Report Issue Form -->
        <div id="reportIssueForm" class="form-container col-10 col-md-6 col-lg-5 p-4 bg-light border rounded" 
             style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -20%); z-index: 1000;">
@@ -136,8 +181,7 @@
               <button type="button" id="closeReportForm" class="btn btn-secondary">Close</button>
           </form>
       </div>
- 
-        
+   
         <!-- Message Sent Confirmation -->
          <!-- Currently not in use due to Formspree API redirection at free tier -->
         <div id="thankYouMessage" style="display: none; position: absolute;
@@ -159,7 +203,8 @@
               <p>&copy; 2025 Gorrdy Games. All rights reserved.</p>
             </div>
         </footer>
-    <!-- Bootstrap JS -->
+   
+        <!-- JS -->
     <script src="javascript/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

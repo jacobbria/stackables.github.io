@@ -90,18 +90,11 @@ body {
   /* Landing Video Section */
   .video-container {
     position: relative;
-    height: 40vh; 
+    height: 70vh; 
     max-height: 500px;
     overflow: hidden;
   }
   
-  /* Responsive adjustment for larger devices */
-  @media (min-width: 576px) {
-    .video-container {
-      height: 80vh; 
-      max-height: 800px; 
-    }
-  }
   
   .video-background {
     position: absolute;
@@ -111,4 +104,51 @@ body {
     height: 100%;
     object-fit: cover; 
   }
+
+  #video_DownloadBtn {
+    position: absolute;
+    width: auto;
+    bottom: 20px; /* <-- adjusts from bottom of container*/
+    left: 50%; /* <-- places btn centered*/
+    transform: translateX(-50%); 
+    
+  }
   
+/* About Section */
+.stackables_logo img {
+  width: 100%;
+  height: 17rem;
+  object-fit: contain;
+  position: relative; 
+}
+
+#video_DownloadBtn {
+  width: 30%;
+  height: 3rem;
+  border: none;
+  background-color: black;
+  color: white;
+  transition: background-color .3s;
+}
+#video_DownloadBtn:hover {
+  background-color: rgb(234, 185, 87);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.7);
+}
+
+.about_Stack {
+  padding: .25rem;
+}
+
+
+/* Responsive adjustment for larger devices */
+@media (min-width: 576px) {
+  .video-container {
+    height: 80vh; 
+    max-height: 800px; 
+  }
+
+  #video_DownloadBtn {
+    width: 20%;
+  }
+
+}

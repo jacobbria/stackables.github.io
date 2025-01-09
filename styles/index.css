@@ -93,6 +93,10 @@ body {
   .privacyHeader {
     background-color: rgb(234, 185, 87);
   }
+
+  #privacy_List {
+    width: 100%;
+  }
   
   /* Landing Video Section */
   .video-container {
@@ -155,6 +159,10 @@ body {
 
   #video_DownloadBtn {
     width: 20%;
+  }
+
+  #privacy_List {
+    width: 75%;
   }
 
 }

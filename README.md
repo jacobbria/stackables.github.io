@@ -1,4 +1,6 @@
-Stackables is an indie game released on Steam and soon android marketplace.
-This web page is made to help promote the game and give users a place to voice concerns and contact the developer.
+Hello!
 
-My personal target for educational growth was using the Bootstrap framework to complete the webpag.
+Stackables is an indie game about progressively getting blocks stacked onto each other.
+This website was made to give a basic understanding of the game and allow me to practice using the front-end basics (HTMl, CSS, JS).
+Additionally, I made sure bring Bootstrap to get a working understanding of CSS libraries.
+
